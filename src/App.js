@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import BackDrop from "./Components/BackDrop";
+import './index.css';
+import Modal from "./Components/Modal";
 function App() {
+  
+
+const [onModal, setModal] = useState(false);
+const onClick = () => {
+  setModal((prev) => !prev);
+};
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Show">
+        <small className="text"
+          onClick={onClick}>
+          Show popup
+        </small>
+      </div>
+      
+      {onModal &&  <Modal onClose={onClick}/> }
+      {onModal && <BackDrop onClose={onClick} />}
     </div>
   );
 }
