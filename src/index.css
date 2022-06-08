@@ -10,6 +10,7 @@
   left: 0;
 }.Show{
   display: flex;
+  cursor: pointer;
     color: white;
     background-color: black;
     justify-content: center;
