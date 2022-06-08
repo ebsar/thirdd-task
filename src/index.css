@@ -20,6 +20,7 @@
 }.App{
   display: flex;
   justify-content: flex-end;
+  
 }.backrground-container{
   border-radius: 6px;
   padding: 1rem;
@@ -27,8 +28,7 @@
   width: 770px;
   z-index: 10;
   position: fixed;
-  top: 15vh;
-  margin-right: 220px;
+ margin: 30%;
 }.First-Container{
 
   display: flex;
@@ -82,8 +82,17 @@
   border-bottom: 1px solid lightgray;
 }.color-f{
   padding-right: 10px;
+}@media (max-width: 1170px)
+{.backrground-container{
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  width: 770px;
+  z-index: 10;
+  position: fixed;
+ margin: 10%;
 }
-
+}
 
 
 
