@@ -54,9 +54,11 @@
   justify-content: space-between;
   display: flex;
 }.Button-container{
-  justify-content: space-between;
+  margin-left: 605px;
+
 }.Save-btn{
   border: 1px solid;
+
   border-radius: 5px;
   width: 70px;
 }.Modal2-Container{

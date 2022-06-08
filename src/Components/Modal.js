@@ -118,7 +118,7 @@ function Modal({ onClose }) {
                 border: "1px solid",
                 borderColor: Color3 ,
                 borderRadius: "5px",
-                backgroundColor:Color,
+                backgroundColor:Color2,
                 width: "70px",
                 height: "30px",
               }}
