@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CirclePicker } from "react-color";
+import { MaterialPicker } from "react-color";
 
 function Modal({ onClose }) {
   const [ChangeTheme, setChangeTheme] = useState(false);
@@ -68,7 +68,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup && (
-              <CirclePicker
+              <MaterialPicker
                 color={Color}
                 onChangeComplete={(Color) => {
                   setColor(Color.hex);
@@ -98,7 +98,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup1 && (
-              <CirclePicker
+              <MaterialPicker
                 color1={Color1}
                 onChangeComplete={(Color1) => {
                   setColor1(Color1.hex);
@@ -127,7 +127,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup2 && (
-              <CirclePicker
+              <MaterialPicker
                 color2={Color2}
                 onChangeComplete={(Color2) => {
                   setColor2(Color2.hex);
@@ -156,7 +156,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup3 && (
-              <CirclePicker
+              <MaterialPicker
                 color3={Color3}
                 onChangeComplete={(Color3) => {
                   setColor3(Color3.hex);
@@ -182,7 +182,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup4 && (
-              <CirclePicker
+              <MaterialPicker
                 color4={Color4}
                 onChangeComplete={(Color4) => {
                   setColor4(Color4.hex);
@@ -195,26 +195,12 @@ function Modal({ onClose }) {
 
       <div className="Button-container">
         <button className="Cancel-btn" onClick={onClose}
-           style={{
-            border: "1px solid",
-            borderColor: Color3 ,
-            borderRadius: "5px",
-            backgroundColor:Color,
-            width: "80px",
-            height: "40px",
-          }}>Cancel
+           ><small style={{color: Color, }} >Cancel</small>
         </button>
-        <button
-          style={{
-            border: "1px solid",
-            borderColor: Color3 ,
-            borderRadius: "5px",
-            backgroundColor:Color2,
-            width: "80px",
-            height: "40px",
-          }}
+        <button className="Save-btn"
+          
         >
-          Save
+          <small style={{color: Color, }}>Save</small>
         </button>
       </div>
     </div>
