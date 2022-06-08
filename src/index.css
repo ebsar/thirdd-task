@@ -33,17 +33,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: auto;
+  max-height: 90vh;
+  overflow-y:auto ;
 }.First-Container{
 
   display: flex;
   justify-content: space-between;
-}.Button-container{
-  justify-content: space-between;
 }.Text-1, .Text-2, .Text-3, .Text-4, .Text-5{
   display: flex;
   justify-content: space-between;
-}.Color1 {
 }.text-4-btn,
 .text-5-btn,
 .text-3-btn,
