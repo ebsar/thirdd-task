@@ -55,7 +55,7 @@
   justify-content: space-between;
   display: flex;
 }.Button-container{
-  margin-left: 605px;
+  margin-left: 5px;
 
 }.Save-btn{
   border: 1px solid;
@@ -69,7 +69,32 @@
   border-bottom: 1px solid lightgray;
 }.color-f{
   padding-right: 10px;
+}@media all and (max-width: 1000px)
+{.backrground-container{
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  width: 770px;
+  z-index: 10;
+  position: fixed;
+  margin-right: 350px;
+  margin-top: 100px;
+  margin-right: 350px;
 }
+}
+@media (max-width: 600px)
+{.backrground-container{
+  width:100% !important;
+  
+}
+}@media (max-width: 1000px)
+{.backrground-container{
+  width:47% !important;
+  
+}
+}
+
+
 
 
 
