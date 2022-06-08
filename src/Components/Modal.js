@@ -6,11 +6,11 @@ function Modal({ onClose }) {
   const onClicker = () => {
     setChangeTheme((prev) => !prev);
   };
-  const [Color, setColor] = useState("#0");
-  const [Color1, setColor1] = useState("#0");
-  const [Color2, setColor2] = useState("#0");
-  const [Color3, setColor3] = useState("#0");
-  const [Color4, setColor4] = useState("#0");
+  const [Color, setColor] = useState("#44444");
+  const [Color1, setColor1] = useState("#ffffff");
+  const [Color2, setColor2] = useState("#2072ef");
+  const [Color3, setColor3] = useState("#2072ef");
+  const [Color4, setColor4] = useState("#0053D1");
   const [colorpopup, setcolorpopup] = useState(false);
   const onClick = () => {
     setcolorpopup((prev) => !prev);
@@ -47,7 +47,7 @@ function Modal({ onClose }) {
           <div className="Text-1">
             <div className="text-4-1">
               <p style={{ color: Color }}>Font Color</p>
-              <p style={{ color: Color }}>{Color}</p>
+              <p className="color-f" style={{ color: Color }}>{Color}</p>
             </div>
             <button
               style={{ backgroundColor: Color }}
@@ -68,7 +68,7 @@ function Modal({ onClose }) {
           <div style={{ Color }} className="Text-2">
             <div className="text-4-1">
               <p style={{ color: Color }}>Backrground Color</p>
-              <p style={{ color: Color }}>{Color1}</p>
+              <p className="color-f" style={{ color: Color }}>{Color1}</p>
             </div>
             <button
               className="text-2-btn"
@@ -89,7 +89,7 @@ function Modal({ onClose }) {
           <div className="Text-3">
             <div className="text-4-1">
               <p style={{ color: Color }}>Button Color</p>
-              <p style={{ color: Color }}>{Color2}</p>
+              <p className="color-f" style={{ color: Color }}>{Color2}</p>
             </div>
             <button
               className="text-3-btn"
@@ -110,7 +110,7 @@ function Modal({ onClose }) {
           <div style={{ Color }} className="Text-4">
             <div className="text-4-1">
               <p style={{ color: Color }}>Button Border Color</p>
-              <p style={{ color: Color }}>{Color3}</p>
+              <p className="color-f" style={{ color: Color }}>{Color3}</p>
             </div>
             <button
               className="text-4-btn"
@@ -131,7 +131,7 @@ function Modal({ onClose }) {
           <div className="Text-5">
             <div className="text-4-1">
               <p style={{ color: Color }}>Button Mouse Color</p>
-              <p style={{ color: Color }}>{Color4}</p>
+              <p className="color-f" style={{ color: Color }}>{Color4}</p>
             </div>
             <button className="text-5-btn" onClick={onClick4}></button>
           </div>
@@ -150,9 +150,9 @@ function Modal({ onClose }) {
 
       <div className="Button-container">
         <button  className="Cancel-btn" onClick={onClose}>
-          Cancel
+        <p style={{ color: Color }}  >Cancel</p>
         </button>
-        <button style={{ backgroundColor:Color2, borderBlockColor:Color3 }} className="Save-btn">Save</button>
+        <button style={{ backgroundColor:Color2, borderBlockColor:Color3, Color:Color }} className="Save-btn"><p style={{ color: Color }}  >Save</p></button>
      </div>
     </div>
   );

@@ -21,15 +21,14 @@
   display: flex;
   justify-content: flex-end;
 }.backrground-container{
-
   border-radius: 6px;
   padding: 1rem;
   text-align: center;
-  width: 550px;
+  width: 770px;
   z-index: 10;
   position: fixed;
-  top: 20vh;
-  left: calc(50% - 18rem);
+  top: 15vh;
+  margin-right: 220px;
 }.First-Container{
 
   display: flex;
@@ -62,12 +61,16 @@
 }.btn2{
   border: 1px solid;
 }.Button-container{
-  margin-left: 367px;
+  
+  margin-left: 76%;
 }.Save-btn{
+  border: 1px solid;
   border-radius: 5px;
   width: 70px;
   height: 40px;
 }.Cancel-btn{
+  background-color: white;
+  border: 1px solid lightgray;
   margin-right: 40px;
   border-radius: 5px;
   width: 70px;
@@ -77,6 +80,8 @@
   margin-bottom: 40px;
 }.Text-1, .Text-2, .Text-3, .Text-4, .Text-5{
   border-bottom: 1px solid lightgray;
+}.color-f{
+  padding-right: 10px;
 }
 
 
