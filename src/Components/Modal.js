@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { MaterialPicker } from "react-color";
+import { CirclePicker } from "react-color";
 
 function Modal({ onClose }) {
-  const [ChangeTheme, setChangeTheme] = useState(false);
-  const onClicker = () => {
-    setChangeTheme((prev) => !prev);
-  };
   const [Color, setColor] = useState("#44444");
   const [Color1, setColor1] = useState("#ffffff");
   const [Color2, setColor2] = useState("#2072ef");
@@ -35,11 +31,10 @@ function Modal({ onClose }) {
     <div style={{ backgroundColor: Color1 }} className="backrground-container">
       <div className="First-Container">
         <p style={{ color: Color }}>Theme Color</p>
-        <p style={{ color: Color2 }} onClick={onClicker}>
+        <p style={{ color: Color2 }} >
           Change Theme
         </p>
       </div>
-      {ChangeTheme && (
         <div
           style={{
             backgroundColor: Color1,
@@ -68,7 +63,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup && (
-              <MaterialPicker
+              <CirclePicker
                 color={Color}
                 onChangeComplete={(Color) => {
                   setColor(Color.hex);
@@ -98,7 +93,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup1 && (
-              <MaterialPicker
+              <CirclePicker
                 color1={Color1}
                 onChangeComplete={(Color1) => {
                   setColor1(Color1.hex);
@@ -127,7 +122,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup2 && (
-              <MaterialPicker
+              <CirclePicker
                 color2={Color2}
                 onChangeComplete={(Color2) => {
                   setColor2(Color2.hex);
@@ -156,7 +151,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup3 && (
-              <MaterialPicker
+              <CirclePicker
                 color3={Color3}
                 onChangeComplete={(Color3) => {
                   setColor3(Color3.hex);
@@ -182,7 +177,7 @@ function Modal({ onClose }) {
           </div>
           <div className="Color1">
             {colorpopup4 && (
-              <MaterialPicker
+              <CirclePicker
                 color4={Color4}
                 onChangeComplete={(Color4) => {
                   setColor4(Color4.hex);
@@ -191,16 +186,29 @@ function Modal({ onClose }) {
             )}
           </div>
         </div>
-      )}
-
       <div className="Button-container">
         <button className="Cancel-btn" onClick={onClose}
-           ><small style={{color: Color, }} >Cancel</small>
+           style={{
+            color: Color,
+            border: "1px solid",
+            borderColor: Color3 ,
+            borderRadius: "5px",
+            backgroundColor:Color,
+            width: "80px",
+            height: "40px",
+          }}>Cancel
         </button>
-        <button className="Save-btn"
-          
+        <button
+          style={{
+            border: "1px solid",
+            borderColor: Color3 ,
+            borderRadius: "5px",
+            backgroundColor:Color2,
+            width: "80px",
+            height: "40px",
+          }}
         >
-          <small style={{color: Color, }}>Save</small>
+          Save
         </button>
       </div>
     </div>
