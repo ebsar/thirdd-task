@@ -106,11 +106,6 @@
     top: 50%;
   }
 }
-@media (max-width: 900px) {
-  .Cancel-btn {
-    margin-right: 90px;
-  }
-}
 .Button-container {
   display: flex;
   justify-content: flex-end;
