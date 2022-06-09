@@ -32,7 +32,7 @@ function Modal({ onClose }) {
     <div style={{ backgroundColor: Color1 }} className="backrground-container">
       <div className="First-Container">
         <h3 style={{ color: Color} }className="textss">Theme Color</h3>
-        <h3 style={{ color: Color2 }}>Change Theme</h3>
+        <h5 style={{ color: Color2 }}>Change Theme</h5>
       </div>
       <div
         style={{
@@ -202,7 +202,7 @@ function Modal({ onClose }) {
             borderRadius: "5px",
           }}
         >
-          <small>Cancel</small>
+          <small className="Cancel-btn1" >Cancel</small>
         </button>
         <button
           className="Save-btn"
@@ -213,7 +213,7 @@ function Modal({ onClose }) {
             backgroundColor: Color2,
           }}
         >
-          <small style={{ color: "white" }}>Save</small>
+          <small className="Save-btn1" >Save</small>
         </button>
        
       </div>

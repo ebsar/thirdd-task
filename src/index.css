@@ -86,18 +86,20 @@
   top: 50%;
   
 }
-}@media (max-width: 1000px)
+}@media (max-width: 900px)
 {.Cancel-btn{
-  margin-right: 80px;
+  margin-right: 90px;
   
 }
-}.Save-btn:hover{
-  color: red;
 }.Button-container{
   display: flex;
   justify-content: flex-end;
-}.textss{
-  font-weight: 90000;
+}.Save-btn1{
+  color: white;
+  font-weight: bold;
+}.Cancel-btn1{
+  color: #444444;
+  font-weight: bold;
 }
 
 
