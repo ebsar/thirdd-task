@@ -17,7 +17,6 @@ const onClick = () => {
           Show popup
         </small>
       </div>
-      
       {onModal &&  <Modal onClose={onClick}/> }
       {onModal && <BackDrop onClose={onClick} />}
     </div>

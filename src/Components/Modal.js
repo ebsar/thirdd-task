@@ -31,7 +31,7 @@ function Modal({ onClose }) {
   return (
     <div style={{ backgroundColor: Color1 }} className="backrground-container">
       <div className="First-Container">
-        <h3 style={{ color: Color} }className="textss">Theme Color</h3>
+        <h3 style={{ color: Color} }>Theme Color</h3>
         <h5 style={{ color: Color2 }}>Change Theme</h5>
       </div>
       <div

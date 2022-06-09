@@ -1,6 +1,7 @@
-*{
-  font-family: 'Montserrat', sans-serif;
-}.backdrop {
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.backdrop {
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.75);
@@ -8,23 +9,26 @@
   height: 100vh;
   top: 0;
   left: 0;
-}.Show{
+}
+.Show {
   display: flex;
   cursor: pointer;
-    color: white;
-    background-color: black;
-    justify-content: center;
-    width: 120px;
-    opacity: 0.3;
-    height: 30px;
-}.text{
+  color: white;
+  background-color: black;
+  justify-content: center;
+  width: 120px;
+  opacity: 0.3;
+  height: 30px;
+}
+.text {
   display: flex;
   align-items: center;
-}.App{
+}
+.App {
   display: flex;
   justify-content: flex-end;
-  
-}.backrground-container{
+}
+.backrground-container {
   border-radius: 6px;
   padding: 1rem;
   text-align: center;
@@ -35,39 +39,55 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 90vh;
-  overflow-y:auto ;
-}.First-Container{
-
+  overflow-y: auto;
+}
+.First-Container {
   display: flex;
   justify-content: space-between;
-}.Text-1, .Text-2, .Text-3, .Text-4, .Text-5{
+}
+.Text-1,
+.Text-2,
+.Text-3,
+.Text-4,
+.Text-5 {
   display: flex;
   justify-content: space-between;
-}.text-4-btn,
+}
+.text-4-btn,
 .text-5-btn,
 .text-3-btn,
 .text-2-btn,
 .text-1-btn {
   margin-top: 10px;
-}.text-4-1 {
+}
+.text-4-1 {
   flex: 1;
   justify-content: space-between;
   display: flex;
-}.Modal2-Container{
+}
+.Modal2-Container {
   margin-top: 40px;
   margin-bottom: 40px;
-}.Text-1, .Text-2, .Text-3, .Text-4, .Text-5{
+}
+.Text-1,
+.Text-2,
+.Text-3,
+.Text-4,
+.Text-5 {
   border-bottom: 1px solid lightgray;
-}.color-f{
+}
+.color-f {
   padding-right: 10px;
-}.Save-btn{
+}
+.Save-btn {
   color: white;
   border: none;
   border-radius: 5px;
-  background-color: #2072EF;
+  background-color: #2072ef;
   width: 80px;
   height: 40px;
-}.Cancel-btn{
+}
+.Cancel-btn {
   border-radius: 5px;
   background-color: #fff;
   margin-right: 40px;
@@ -75,48 +95,31 @@
   height: 40px;
   border: 1px solid lightgray;
 }
-@media (max-width: 600px)
-{.backrground-container{
-  width:100% !important;
-  
+@media (max-width: 600px) {
+  .backrground-container {
+    width: 100% !important;
+  }
 }
-}@media (max-width: 1000px)
-{.backrground-container{
-  width:70% !important;
-  top: 50%;
-  
+@media (max-width: 1000px) {
+  .backrground-container {
+    width: 80% !important;
+    top: 50%;
+  }
 }
-}@media (max-width: 900px)
-{.Cancel-btn{
-  margin-right: 90px;
-  
+@media (max-width: 900px) {
+  .Cancel-btn {
+    margin-right: 90px;
+  }
 }
-}.Button-container{
+.Button-container {
   display: flex;
   justify-content: flex-end;
-}.Save-btn1{
+}
+.Save-btn1 {
   color: white;
   font-weight: bold;
-}.Cancel-btn1{
+}
+.Cancel-btn1 {
   color: #444444;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
