@@ -198,7 +198,7 @@ function Modal({ onClose }) {
           className="Cancel-btn"
           onClick={onClose}
           style={{
-            border: "1px solid",
+            border: "1px solid lightgrey",
             borderRadius: "5px",
           }}
         >
